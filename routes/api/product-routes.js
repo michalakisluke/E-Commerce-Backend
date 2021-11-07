@@ -6,18 +6,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // get all products
 router.get('/', (req, res) => {
   console.log('===============');
-  Product.findAll({
-      attributes: [
-          'id', 
-          'product_name', 
-          'price', 
-          'stock',
-          'category_id',
-          [sequelize.literal(''), '']
-      ],
-      order: [],
-      include: []
-  })
+  Product.findAll({})
   .then(dbProductData => res.json(dbProductData))
   .catch(err => {
       console.log(err);
