@@ -1,20 +1,36 @@
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
+# E-Commerce Backend
 
-GIVEN a functional Express.js API
+  ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  ## Description
+  This project allows the user to read, modify and update a database for an e-commerce website
 
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
+  ## Installation
+  Run npm install in the project directory to install the required packages.
 
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
+  ## Usage
+  To use, first the user must update the .env file with their credentials, then create the database in MySQL. Once the database exists, the user must seed the database with "node seeds/index.js". To begin testing the routes in Insomnia, the user must type "node server.js" to start the server. Once the server has been started, the user can use Insomnia to manipulate the database.
 
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
+  ## License
+  [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
-WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
+  ## Contributing
+  [michalakisluke](https://github.com/michalakisluke)  
 
-WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-THEN I am able to successfully create, update, and delete data in my database
+  ## Tests
+  n/a
+
+  ## Questions
+  Please reach out to me through github at [michalakisluke](https://github.com/michalakisluke) or by email at michalakisluke@gmail.com
+
+  ## Video Walkthrough
+  Please watch the following [video](https://watch.screencastify.com/v/ZV6iK9o3KSdVfRyeLkP7) to view how to test the routes in Insomnia.
+
+  
