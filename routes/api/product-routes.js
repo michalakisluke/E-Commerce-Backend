@@ -54,6 +54,7 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
+  console.log('===============');
   Product.create({
     product_name: req.body.product_name,
     price: req.body.price,
@@ -84,6 +85,7 @@ router.post('/', (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
+  console.log('===============');
   // update product data
   Product.update(req.body, {
     where: {
@@ -125,6 +127,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
+  console.log('===============');
   Product.destroy({
     where: {
         id: req.params.id
